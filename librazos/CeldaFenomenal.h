@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *autor;
 @property (weak, nonatomic) IBOutlet UIImageView *imagen;
 
+
 @end
