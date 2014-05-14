@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F7711293-A4D8-48E2-B190-07BD242C3E95</string>
+	<key>IDESourceControlProjectName</key>
+	<string>librazos</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E0CFE9C-03C7-4C92-81AF-1E650317E19B</key>
+		<string>file:///Users/mariano/Desktop/</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>librazos.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E0CFE9C-03C7-4C92-81AF-1E650317E19B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>file:///Users/mariano/Desktop/</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E0CFE9C-03C7-4C92-81AF-1E650317E19B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E0CFE9C-03C7-4C92-81AF-1E650317E19B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>librazos</string>
+		</dict>
+	</array>
+</dict>
+</plist>
