@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5AC9D2519209F90001E820A /* CeldaFenomenal.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AC9D2419209F90001E820A /* CeldaFenomenal.m */; };
 		D5AF5B10191F04F20035EB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B0F191F04F20035EB45 /* Foundation.framework */; };
 		D5AF5B12191F04F20035EB45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B11191F04F20035EB45 /* CoreGraphics.framework */; };
 		D5AF5B14191F04F20035EB45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B13191F04F20035EB45 /* UIKit.framework */; };
@@ -21,6 +22,22 @@
 		D5AF5B31191F04F20035EB45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B13191F04F20035EB45 /* UIKit.framework */; };
 		D5AF5B39191F04F20035EB45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B37191F04F20035EB45 /* InfoPlist.strings */; };
 		D5AF5B3B191F04F20035EB45 /* librazosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B3A191F04F20035EB45 /* librazosTests.m */; };
+		D5AF5B46191F077B0035EB45 /* LibroFenomenal.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B45191F077B0035EB45 /* LibroFenomenal.m */; };
+		D5AF5B47191F077B0035EB45 /* LibroFenomenal.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B45191F077B0035EB45 /* LibroFenomenal.m */; };
+		D5AF5B4A191F0FD80035EB45 /* InformacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B49191F0FD80035EB45 /* InformacionViewController.m */; };
+		D5AF5B4B191F0FD80035EB45 /* InformacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B49191F0FD80035EB45 /* InformacionViewController.m */; };
+		D5AF5B4E191F80F40035EB45 /* jenkins.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */; };
+		D5AF5B4F191F80F40035EB45 /* jenkins.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */; };
+		D5AF5B50191F80F40035EB45 /* spring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4D191F80F40035EB45 /* spring.jpeg */; };
+		D5AF5B51191F80F40035EB45 /* spring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4D191F80F40035EB45 /* spring.jpeg */; };
+		D5AF5B58191FB76A0035EB45 /* NuevoLibroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B57191FB76A0035EB45 /* NuevoLibroViewController.m */; };
+		D5AF5B59191FB76A0035EB45 /* NuevoLibroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B57191FB76A0035EB45 /* NuevoLibroViewController.m */; };
+		D5D3602F1921FF260023DE8A /* CeldaFenomenal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */; };
+		D5D360301921FF260023DE8A /* CeldaFenomenal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */; };
+		D5D5C1211922E6CB009710A3 /* mapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1201922E6CB009710A3 /* mapTabViewController.m */; };
+		D5D5C1221922E6CB009710A3 /* mapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1201922E6CB009710A3 /* mapTabViewController.m */; };
+		D5D5C1311922F119009710A3 /* TelefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1301922F119009710A3 /* TelefViewController.m */; };
+		D5D5C1321922F119009710A3 /* TelefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1301922F119009710A3 /* TelefViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5AC9D2319209F90001E820A /* CeldaFenomenal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldaFenomenal.h; sourceTree = "<group>"; };
+		D5AC9D2419209F90001E820A /* CeldaFenomenal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldaFenomenal.m; sourceTree = "<group>"; };
 		D5AF5B0C191F04F20035EB45 /* librazos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = librazos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5AF5B0F191F04F20035EB45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5AF5B11191F04F20035EB45 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +72,19 @@
 		D5AF5B36191F04F20035EB45 /* librazosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "librazosTests-Info.plist"; sourceTree = "<group>"; };
 		D5AF5B38191F04F20035EB45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5AF5B3A191F04F20035EB45 /* librazosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = librazosTests.m; sourceTree = "<group>"; };
+		D5AF5B44191F077B0035EB45 /* LibroFenomenal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibroFenomenal.h; sourceTree = "<group>"; };
+		D5AF5B45191F077B0035EB45 /* LibroFenomenal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibroFenomenal.m; sourceTree = "<group>"; };
+		D5AF5B48191F0FD80035EB45 /* InformacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformacionViewController.h; sourceTree = "<group>"; };
+		D5AF5B49191F0FD80035EB45 /* InformacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformacionViewController.m; sourceTree = "<group>"; };
+		D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jenkins.jpeg; path = ../../jenkins.jpeg; sourceTree = "<group>"; };
+		D5AF5B4D191F80F40035EB45 /* spring.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = spring.jpeg; path = ../../spring.jpeg; sourceTree = "<group>"; };
+		D5AF5B56191FB76A0035EB45 /* NuevoLibroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevoLibroViewController.h; sourceTree = "<group>"; };
+		D5AF5B57191FB76A0035EB45 /* NuevoLibroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoLibroViewController.m; sourceTree = "<group>"; };
+		D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CeldaFenomenal.xib; sourceTree = "<group>"; };
+		D5D5C11F1922E6CB009710A3 /* mapTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapTabViewController.h; sourceTree = "<group>"; };
+		D5D5C1201922E6CB009710A3 /* mapTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapTabViewController.m; sourceTree = "<group>"; };
+		D5D5C12F1922F119009710A3 /* TelefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelefViewController.h; sourceTree = "<group>"; };
+		D5D5C1301922F119009710A3 /* TelefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelefViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +144,28 @@
 		D5AF5B15191F04F20035EB45 /* librazos */ = {
 			isa = PBXGroup;
 			children = (
+				D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */,
+				D5AF5B4D191F80F40035EB45 /* spring.jpeg */,
+				D5D5C11F1922E6CB009710A3 /* mapTabViewController.h */,
+				D5D5C12F1922F119009710A3 /* TelefViewController.h */,
+				D5D5C1301922F119009710A3 /* TelefViewController.m */,
+				D5D5C1201922E6CB009710A3 /* mapTabViewController.m */,
+				D5AF5B56191FB76A0035EB45 /* NuevoLibroViewController.h */,
+				D5AC9D2319209F90001E820A /* CeldaFenomenal.h */,
+				D5AC9D2419209F90001E820A /* CeldaFenomenal.m */,
+				D5AF5B57191FB76A0035EB45 /* NuevoLibroViewController.m */,
 				D5AF5B1E191F04F20035EB45 /* AppDelegate.h */,
 				D5AF5B1F191F04F20035EB45 /* AppDelegate.m */,
 				D5AF5B21191F04F20035EB45 /* Main.storyboard */,
 				D5AF5B24191F04F20035EB45 /* ViewController.h */,
+				D5AF5B48191F0FD80035EB45 /* InformacionViewController.h */,
+				D5AF5B49191F0FD80035EB45 /* InformacionViewController.m */,
 				D5AF5B25191F04F20035EB45 /* ViewController.m */,
+				D5AF5B44191F077B0035EB45 /* LibroFenomenal.h */,
+				D5AF5B45191F077B0035EB45 /* LibroFenomenal.m */,
 				D5AF5B27191F04F20035EB45 /* Images.xcassets */,
 				D5AF5B16191F04F20035EB45 /* Supporting Files */,
+				D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */,
 			);
 			path = librazos;
 			sourceTree = "<group>";
@@ -229,7 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5AF5B28191F04F20035EB45 /* Images.xcassets in Resources */,
+				D5D3602F1921FF260023DE8A /* CeldaFenomenal.xib in Resources */,
 				D5AF5B1A191F04F20035EB45 /* InfoPlist.strings in Resources */,
+				D5AF5B4E191F80F40035EB45 /* jenkins.jpeg in Resources */,
+				D5AF5B50191F80F40035EB45 /* spring.jpeg in Resources */,
 				D5AF5B23191F04F20035EB45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AF5B4F191F80F40035EB45 /* jenkins.jpeg in Resources */,
+				D5D360301921FF260023DE8A /* CeldaFenomenal.xib in Resources */,
+				D5AF5B51191F80F40035EB45 /* spring.jpeg in Resources */,
 				D5AF5B39191F04F20035EB45 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AC9D2519209F90001E820A /* CeldaFenomenal.m in Sources */,
+				D5D5C1211922E6CB009710A3 /* mapTabViewController.m in Sources */,
+				D5D5C1311922F119009710A3 /* TelefViewController.m in Sources */,
+				D5AF5B46191F077B0035EB45 /* LibroFenomenal.m in Sources */,
+				D5AF5B58191FB76A0035EB45 /* NuevoLibroViewController.m in Sources */,
 				D5AF5B26191F04F20035EB45 /* ViewController.m in Sources */,
 				D5AF5B20191F04F20035EB45 /* AppDelegate.m in Sources */,
 				D5AF5B1C191F04F20035EB45 /* main.m in Sources */,
+				D5AF5B4A191F0FD80035EB45 /* InformacionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AF5B4B191F0FD80035EB45 /* InformacionViewController.m in Sources */,
+				D5D5C1221922E6CB009710A3 /* mapTabViewController.m in Sources */,
+				D5AF5B59191FB76A0035EB45 /* NuevoLibroViewController.m in Sources */,
+				D5AF5B47191F077B0035EB45 /* LibroFenomenal.m in Sources */,
 				D5AF5B3B191F04F20035EB45 /* librazosTests.m in Sources */,
+				D5D5C1321922F119009710A3 /* TelefViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +520,7 @@
 				D5AF5B40191F04F20035EB45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5AF5B41191F04F20035EB45 /* Build configuration list for PBXNativeTarget "librazosTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +529,7 @@
 				D5AF5B43191F04F20035EB45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

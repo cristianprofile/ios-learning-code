@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InformacionViewController.h"
+#import "LibroFenomenal.h"
+#import "NuevoLibroViewController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UITableViewController<NuevoLibroViewControllerDelegate>
+@property NSMutableArray *libros;
+@property NSArray *searchResults;
+@property LibroFenomenal *libroSeleccionado;
+
+
+
+
 
 @end
