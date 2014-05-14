@@ -12,6 +12,6 @@
 
 - (IBAction)llamarTelefono:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UITextField *numero;
+@property (weak, nonatomic) IBOutlet UITextField *numero; 
 
 @end
