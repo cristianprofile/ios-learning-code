@@ -55,23 +55,14 @@
 }
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 
 - (IBAction)llamarTelefono:(id)sender {
     
-       
+    NSString *baseStringTelephoneCall = @"telprompt://+";
+    NSString *numberToCall = [baseStringTelephoneCall stringByAppendingFormat:
+                         @"%@", self.numero.text];
     
-     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://+"]];
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:numberToCall]];
     
     
 }
