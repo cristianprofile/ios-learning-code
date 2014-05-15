@@ -56,7 +56,7 @@
 
 - (IBAction)llamarTelefono:(id)sender {
     
-       self.numero
+       
     
      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://+"]];
     
