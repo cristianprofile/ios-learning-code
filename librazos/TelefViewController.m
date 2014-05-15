@@ -38,7 +38,20 @@
 
 - (IBAction)unwindToTelef:(UIStoryboardSegue *)unwindSegue;
 {
-    NSLog(@"pasa por unwind");
+    UIViewController *modalGoingAway = unwindSegue.sourceViewController;
+
+    // string1 is "A string: string, a float: 31415.93"
+    
+    NSNumber *number = @1234;
+    NSDictionary *dictionary = @{@"date": [NSDate date]};
+    NSString *baseString = @"Base string.";
+    NSString *string2 = [baseString stringByAppendingFormat:
+                         @" A number: %@, a dictionary: %@", number, dictionary];
+    // string2 is "Base string. A number: 1234, a dictionary: {date = 2005-10-17 09:02:01 -0700; }"
+
+    // Do something (like get data) from modalGoingAway if you need to...
+    NSLog(@"pasa por unwind %@",string2);
+    NSLog(@"pasa por unwind y viene del controlador %@",modalGoingAway);
 }
 
 
