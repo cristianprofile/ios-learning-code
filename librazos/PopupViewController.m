@@ -1,18 +1,18 @@
 //
-//  TelefViewController.m
+//  PopupViewController.m
 //  librazos
 //
 //  Created by mariano on 14/05/14.
 //  Copyright (c) 2014 cristianTestin. All rights reserved.
 //
 
-#import "TelefViewController.h"
+#import "PopupViewController.h"
 
-@interface TelefViewController ()
+@interface PopupViewController ()
 
 @end
 
-@implementation TelefViewController
+@implementation PopupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -20,25 +20,19 @@
     if (self) {
         // Custom initialization
     }
-    return self; 
+    return self;
 }
-
+ 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
- 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-- (IBAction)unwindToTelef:(UIStoryboardSegue *)unwindSegue;
-{
-    NSLog(@"pasa por unwind");
 }
 
 
@@ -53,13 +47,4 @@
 }
 */
 
-
-- (IBAction)llamarTelefono:(id)sender {
-    
-       self.numero
-    
-     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://+"]];
-    
-    
-}
 @end

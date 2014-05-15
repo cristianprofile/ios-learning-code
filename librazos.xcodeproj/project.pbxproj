@@ -38,6 +38,7 @@
 		D5D5C1221922E6CB009710A3 /* mapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1201922E6CB009710A3 /* mapTabViewController.m */; };
 		D5D5C1311922F119009710A3 /* TelefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1301922F119009710A3 /* TelefViewController.m */; };
 		D5D5C1321922F119009710A3 /* TelefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1301922F119009710A3 /* TelefViewController.m */; };
+		D5FC77181923B9DA003701EA /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC77171923B9DA003701EA /* PopupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		D5D5C1201922E6CB009710A3 /* mapTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapTabViewController.m; sourceTree = "<group>"; };
 		D5D5C12F1922F119009710A3 /* TelefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelefViewController.h; sourceTree = "<group>"; };
 		D5D5C1301922F119009710A3 /* TelefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelefViewController.m; sourceTree = "<group>"; };
+		D5FC77161923B9DA003701EA /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
+		D5FC77171923B9DA003701EA /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 				D5AF5B27191F04F20035EB45 /* Images.xcassets */,
 				D5AF5B16191F04F20035EB45 /* Supporting Files */,
 				D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */,
+				D5FC77161923B9DA003701EA /* PopupViewController.h */,
+				D5FC77171923B9DA003701EA /* PopupViewController.m */,
 			);
 			path = librazos;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				D5AF5B20191F04F20035EB45 /* AppDelegate.m in Sources */,
 				D5AF5B1C191F04F20035EB45 /* main.m in Sources */,
 				D5AF5B4A191F0FD80035EB45 /* InformacionViewController.m in Sources */,
+				D5FC77181923B9DA003701EA /* PopupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
