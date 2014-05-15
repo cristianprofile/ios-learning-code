@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface PopupViewController : UIViewController
+@interface PopupViewController : UIViewController<MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *map;
 
 @end

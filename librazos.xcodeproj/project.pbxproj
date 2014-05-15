@@ -38,6 +38,9 @@
 		D5D5C1221922E6CB009710A3 /* mapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1201922E6CB009710A3 /* mapTabViewController.m */; };
 		D5D5C1311922F119009710A3 /* TelefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1301922F119009710A3 /* TelefViewController.m */; };
 		D5D5C1321922F119009710A3 /* TelefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1301922F119009710A3 /* TelefViewController.m */; };
+		D5EE10201925181B0035F5B8 /* MKAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = D5EE101F1925181B0035F5B8 /* MKAnnotation.png */; };
+		D5EE102219251A7E0035F5B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5EE102119251A7E0035F5B8 /* MapKit.framework */; };
+		D5EE102519251EA80035F5B8 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EE102419251EA80035F5B8 /* CustomAnnotation.m */; };
 		D5FC77181923B9DA003701EA /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC77171923B9DA003701EA /* PopupViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,10 @@
 		D5D5C1201922E6CB009710A3 /* mapTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapTabViewController.m; sourceTree = "<group>"; };
 		D5D5C12F1922F119009710A3 /* TelefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelefViewController.h; sourceTree = "<group>"; };
 		D5D5C1301922F119009710A3 /* TelefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelefViewController.m; sourceTree = "<group>"; };
+		D5EE101F1925181B0035F5B8 /* MKAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MKAnnotation.png; path = ../../MKAnnotation.png; sourceTree = "<group>"; };
+		D5EE102119251A7E0035F5B8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D5EE102319251EA80035F5B8 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		D5EE102419251EA80035F5B8 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 		D5FC77161923B9DA003701EA /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
 		D5FC77171923B9DA003701EA /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +104,7 @@
 			files = (
 				D5AF5B12191F04F20035EB45 /* CoreGraphics.framework in Frameworks */,
 				D5AF5B14191F04F20035EB45 /* UIKit.framework in Frameworks */,
+				D5EE102219251A7E0035F5B8 /* MapKit.framework in Frameworks */,
 				D5AF5B10191F04F20035EB45 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +144,7 @@
 		D5AF5B0E191F04F20035EB45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5EE102119251A7E0035F5B8 /* MapKit.framework */,
 				D5AF5B0F191F04F20035EB45 /* Foundation.framework */,
 				D5AF5B11191F04F20035EB45 /* CoreGraphics.framework */,
 				D5AF5B13191F04F20035EB45 /* UIKit.framework */,
@@ -148,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */,
+				D5EE101F1925181B0035F5B8 /* MKAnnotation.png */,
 				D5AF5B4D191F80F40035EB45 /* spring.jpeg */,
 				D5D5C11F1922E6CB009710A3 /* mapTabViewController.h */,
 				D5D5C12F1922F119009710A3 /* TelefViewController.h */,
@@ -169,8 +179,7 @@
 				D5AF5B27191F04F20035EB45 /* Images.xcassets */,
 				D5AF5B16191F04F20035EB45 /* Supporting Files */,
 				D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */,
-				D5FC77161923B9DA003701EA /* PopupViewController.h */,
-				D5FC77171923B9DA003701EA /* PopupViewController.m */,
+				D5EE101E192516960035F5B8 /* popupController */,
 			);
 			path = librazos;
 			sourceTree = "<group>";
@@ -202,6 +211,17 @@
 				D5AF5B37191F04F20035EB45 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5EE101E192516960035F5B8 /* popupController */ = {
+			isa = PBXGroup;
+			children = (
+				D5FC77161923B9DA003701EA /* PopupViewController.h */,
+				D5FC77171923B9DA003701EA /* PopupViewController.m */,
+				D5EE102319251EA80035F5B8 /* CustomAnnotation.h */,
+				D5EE102419251EA80035F5B8 /* CustomAnnotation.m */,
+			);
+			name = popupController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +271,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = cristianTestin;
 				TargetAttributes = {
+					D5AF5B0B191F04F20035EB45 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					D5AF5B2C191F04F20035EB45 = {
 						TestTargetID = D5AF5B0B191F04F20035EB45;
 					};
@@ -285,6 +312,7 @@
 				D5AF5B1A191F04F20035EB45 /* InfoPlist.strings in Resources */,
 				D5AF5B4E191F80F40035EB45 /* jenkins.jpeg in Resources */,
 				D5AF5B50191F80F40035EB45 /* spring.jpeg in Resources */,
+				D5EE10201925181B0035F5B8 /* MKAnnotation.png in Resources */,
 				D5AF5B23191F04F20035EB45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +340,7 @@
 				D5D5C1311922F119009710A3 /* TelefViewController.m in Sources */,
 				D5AF5B46191F077B0035EB45 /* LibroFenomenal.m in Sources */,
 				D5AF5B58191FB76A0035EB45 /* NuevoLibroViewController.m in Sources */,
+				D5EE102519251EA80035F5B8 /* CustomAnnotation.m in Sources */,
 				D5AF5B26191F04F20035EB45 /* ViewController.m in Sources */,
 				D5AF5B20191F04F20035EB45 /* AppDelegate.m in Sources */,
 				D5AF5B1C191F04F20035EB45 /* main.m in Sources */,
