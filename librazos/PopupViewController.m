@@ -27,15 +27,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    NSLog(@"using MapView.userLocation, latitude = %f", self.map.userLocation.location.coordinate.latitude); //output = 0.000000
+    NSLog(@"using MapView.userLocation, longitude = %f", self.map.userLocation.location.coordinate.longitude); //output = 0.000000
+    
     //Creamos una coordenada inicial, en nuestro caso perteneciente a madrid.
     CLLocationCoordinate2D initialLocation;
     initialLocation.latitude = 40.33468913769062;
     initialLocation.longitude= -3.7497285227539123;
     
-    // Esto situará el centro del mapa en madrid con la distancia de región que establezcamos.
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(initialLocation, 4000, 4000);
     
-    [self.map setRegion:region animated:YES];
     
     // Generaremos 10 anotaciones, o las que definamos en el for.
     for(int i = 0; i < 10; i++) {
@@ -120,6 +122,15 @@
     
     
     
+}
+
+
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    CLLocationCoordinate2D currentLocation=[userLocation coordinate];
+    MKCoordinateRegion region=MKCoordinateRegionMakeWithDistance(currentLocation, 4000, 4000);
+    [self.map setRegion:region animated:YES];
 }
 
 
