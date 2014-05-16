@@ -27,8 +27,8 @@
     
     LibroFenomenal *libro = [[LibroFenomenal alloc] init];
     
-    libro.nombre = @"Jenkins el puto amo";
-    libro.autor = @"Integrador continuo";
+    libro.nombre = @"Jenkins el amo";
+    libro.autor = @"Angel Murillo";
     libro.publicado = @"16-05";
     libro.genero = @"Parodia";
     libro.portada = [UIImage imageNamed:@"jenkins.jpeg"];
