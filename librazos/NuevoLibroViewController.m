@@ -29,7 +29,7 @@
 
 
 - (IBAction)anadirImagen:(id)sender {
-    UIAlertView *alertaRoja=[[UIAlertView alloc] initWithTitle:@"Liberia" message:@"Libro creado correctamente!" delegate:self cancelButtonTitle:@"Cancelar"  otherButtonTitles: @"Camera",@"Galeria" ,nil];
+    UIAlertView *alertaRoja=[[UIAlertView alloc] initWithTitle:@"Subir Imagen" message:@"Elige una opción!" delegate:self cancelButtonTitle:@"Cancelar"  otherButtonTitles: @"Camera",@"Galeria" ,nil];
     [alertaRoja show];
 
     

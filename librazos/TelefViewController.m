@@ -66,4 +66,17 @@
     
     
 }
+
+//hidden keyboard when  push done button
+-(IBAction)textFieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+//hidden keyboard after touch outside uitexfiled
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
 @end
