@@ -58,7 +58,7 @@
 
 - (IBAction)llamarTelefono:(id)sender {
     
-    NSString *baseStringTelephoneCall = @"telprompt://+";
+    NSString *baseStringTelephoneCall = @"telprompt://+34";
     NSString *numberToCall = [baseStringTelephoneCall stringByAppendingFormat:
                          @"%@", self.numero.text];
     
