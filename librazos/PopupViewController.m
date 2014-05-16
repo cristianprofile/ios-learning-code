@@ -15,11 +15,15 @@
 
 @implementation PopupViewController
 
+Boolean posicionInical;
+CLLocationCoordinate2D posicion;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        posicionInical=FALSE;
     }
     return self;
 }
@@ -28,9 +32,7 @@
 {
     [super viewDidLoad];
     
-    
-    NSLog(@"using MapView.userLocation, latitude = %f", self.map.userLocation.location.coordinate.latitude); //output = 0.000000
-    NSLog(@"using MapView.userLocation, longitude = %f", self.map.userLocation.location.coordinate.longitude); //output = 0.000000
+
     
     //Creamos una coordenada inicial, en nuestro caso perteneciente a madrid.
     CLLocationCoordinate2D initialLocation;
@@ -61,6 +63,7 @@
         
         
     }
+  
    
     // Do any additional setup after loading the view.
 }
@@ -128,10 +131,29 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    CLLocationCoordinate2D currentLocation=[userLocation coordinate];
-    MKCoordinateRegion region=MKCoordinateRegionMakeWithDistance(currentLocation, 4000, 4000);
-    [self.map setRegion:region animated:YES];
+    
+        if (posicion.latitude==0 && posicion.longitude==0)
+        {
+            posicion=[userLocation coordinate];
+            posicionInical=TRUE;
+           
+        }
+
+
+    
+        CLLocationCoordinate2D currentLocation=[userLocation coordinate];
+        //solo  lo actualizo si hemos cambiado de la latitud
+        if  (posicion.latitude==currentLocation.latitude && posicion.longitude==currentLocation.longitude && posicionInical)
+        {
+            NSLog(@"pasa por actualizar la animacion");
+            MKCoordinateRegion region=MKCoordinateRegionMakeWithDistance(currentLocation, 4000, 4000);
+            [self.map setRegion:region animated:YES];
+            
+    }
+    
 }
+
+
 
 
 @end
