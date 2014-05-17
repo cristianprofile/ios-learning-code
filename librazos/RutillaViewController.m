@@ -71,7 +71,7 @@
                                   MKLaunchOptionsDirectionsModeDriving
                               };
     
-    [mapItem openInMapsWithLaunchOptions:options];
+    [mapItem openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey  : MKLaunchOptionsDirectionsModeDriving}];
 }
 
 //hidden keyboard after touch outside uitexfiled
