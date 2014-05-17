@@ -148,12 +148,23 @@
     aView.frame = frame;
     
     
+    
+    
+    aView.canShowCallout = YES;
+    aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+
+    
     return aView;
     
     
     
 }
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    NSLog(@"pasandoooo por pinchado información");
+     NSLog(@"pasandoooo");
+}
 
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
@@ -179,6 +190,7 @@
     }
     
 }
+
 
 
 
