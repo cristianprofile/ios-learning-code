@@ -66,10 +66,7 @@
     MKMapItem *mapItem =
     [[MKMapItem alloc]initWithPlacemark:place];
     
-    NSDictionary *options = @{
-                              MKLaunchOptionsDirectionsModeKey:
-                                  MKLaunchOptionsDirectionsModeDriving
-                              };
+
     
     [mapItem openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey  : MKLaunchOptionsDirectionsModeDriving}];
 }

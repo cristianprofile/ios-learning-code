@@ -149,9 +149,9 @@
     
     
     
-    
+    //acceso para control de tap en la anotacion
     aView.canShowCallout = YES;
-    aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeInfoLight];
 
     
     return aView;
@@ -163,7 +163,35 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
     NSLog(@"pasandoooo por pinchado información");
-     NSLog(@"pasandoooo");
+    NSLog(@"pasandoooo");
+ 
+    CustomAnnotation *anotacion1 = (CustomAnnotation*)view.annotation;
+    NSLog(@"%@",anotacion1.title);
+    NSLog(@"%@",anotacion1.description);
+    NSLog(@"%f",anotacion1.coordinate.longitude);
+    NSLog(@"%f",anotacion1.coordinate.latitude);
+    MKMapItem *mapItemOrigen = [MKMapItem mapItemForCurrentLocation];
+    NSLog(@"%@",mapItemOrigen.name);
+    NSLog(@"%@",mapItemOrigen.description);
+    
+    CLLocationCoordinate2D initialLocation;
+    initialLocation.latitude = anotacion1.coordinate.latitude;
+    initialLocation.longitude= anotacion1.coordinate.longitude;
+    
+    NSLog(@"%f",anotacion1.coordinate.latitude);
+    NSLog(@"%f",anotacion1.coordinate.longitude);
+    
+    MKPlacemark *place = [[MKPlacemark alloc]
+                          initWithCoordinate:initialLocation
+                          addressDictionary:nil];
+    
+    MKMapItem *mapItemDestino =
+    [[MKMapItem alloc]initWithPlacemark:place];
+    NSArray *mapItems = @[mapItemOrigen, mapItemDestino];
+    
+   [MKMapItem openMapsWithItems:mapItems launchOptions:@{MKLaunchOptionsDirectionsModeKey  : MKLaunchOptionsDirectionsModeDriving}];
+    
+
 }
 
 
