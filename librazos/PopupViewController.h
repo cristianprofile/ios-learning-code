@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <AddressBook/AddressBook.h>
+
 
 @interface PopupViewController : UIViewController<MKMapViewDelegate>
 
@@ -16,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet MKMapView *map;
 @property Boolean posicionInical;
 @property CLLocationCoordinate2D posicion;
+@property (strong, nonatomic) MKMapItem *destination;
 
 
 @end

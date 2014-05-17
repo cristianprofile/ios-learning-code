@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D505BA74192798B10088EF56 /* RutillaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D505BA73192798B10088EF56 /* RutillaViewController.m */; };
 		D5AC9D2519209F90001E820A /* CeldaFenomenal.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AC9D2419209F90001E820A /* CeldaFenomenal.m */; };
 		D5AF5B10191F04F20035EB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B0F191F04F20035EB45 /* Foundation.framework */; };
 		D5AF5B12191F04F20035EB45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B11191F04F20035EB45 /* CoreGraphics.framework */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D505BA72192798B10088EF56 /* RutillaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutillaViewController.h; sourceTree = "<group>"; };
+		D505BA73192798B10088EF56 /* RutillaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutillaViewController.m; sourceTree = "<group>"; };
 		D5AC9D2319209F90001E820A /* CeldaFenomenal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldaFenomenal.h; sourceTree = "<group>"; };
 		D5AC9D2419209F90001E820A /* CeldaFenomenal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldaFenomenal.m; sourceTree = "<group>"; };
 		D5AF5B0C191F04F20035EB45 /* librazos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = librazos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +180,8 @@
 				D5AF5B16191F04F20035EB45 /* Supporting Files */,
 				D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */,
 				D5EE101E192516960035F5B8 /* popupController */,
+				D505BA72192798B10088EF56 /* RutillaViewController.h */,
+				D505BA73192798B10088EF56 /* RutillaViewController.m */,
 			);
 			path = librazos;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				D5AF5B20191F04F20035EB45 /* AppDelegate.m in Sources */,
 				D5AF5B1C191F04F20035EB45 /* main.m in Sources */,
 				D5AF5B4A191F0FD80035EB45 /* InformacionViewController.m in Sources */,
+				D505BA74192798B10088EF56 /* RutillaViewController.m in Sources */,
 				D5FC77181923B9DA003701EA /* PopupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

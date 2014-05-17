@@ -57,15 +57,42 @@
         CustomAnnotation *annotation = [[CustomAnnotation alloc]initWithTitle: @"Jenkins el amo"
                                                                      subtitle: [NSString stringWithFormat:@"Has pinchado en la anotación %d",i]
                                                                 andCoordinate:newCoord];
+        
+        MKPlacemark *mPlacemark = [[MKPlacemark alloc] initWithCoordinate:newCoord addressDictionary:nil] ;
         // Y la insertamos en el mapa
         [self.map addAnnotation:annotation];
         
         
         
+        
+        
+        
+        
     }
+    
+    
   
-   
+ 
+
+    
     // Do any additional setup after loading the view.
+}
+-(void)showRoute:(MKDirectionsResponse *)response
+{
+    for (MKRoute *route in response.routes)
+    {
+        [self.map
+         addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+    }
+}
+
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id < MKOverlay >)overlay
+{
+    MKPolylineRenderer *renderer =
+    [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    renderer.strokeColor = [UIColor blueColor];
+    renderer.lineWidth = 5.0;
+    return renderer;
 }
 
 - (void)didReceiveMemoryWarning
