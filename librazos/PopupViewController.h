@@ -11,6 +11,11 @@
 
 @interface PopupViewController : UIViewController<MKMapViewDelegate>
 
+
+
 @property (weak, nonatomic) IBOutlet MKMapView *map;
+@property Boolean posicionInical;
+@property CLLocationCoordinate2D posicion;
+
 
 @end

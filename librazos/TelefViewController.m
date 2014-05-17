@@ -7,6 +7,7 @@
 //
 
 #import "TelefViewController.h"
+#import "PopupViewController.h"
 
 @interface TelefViewController ()
 
@@ -52,6 +53,19 @@
     // Do something (like get data) from modalGoingAway if you need to...
     NSLog(@"pasa por unwind %@",string2);
     NSLog(@"pasa por unwind y viene del controlador %@",modalGoingAway);
+    UIViewController *sourceView = [unwindSegue sourceViewController];
+    //miro de la seuge que vengo el tipo de objeto de controlador que me ha llamado
+    if ([sourceView isKindOfClass:[ PopupViewController class]]) {
+        PopupViewController  *popupViewController = (PopupViewController  *)sourceView;
+        popupViewController.posicionInical=false;
+        CLLocationCoordinate2D initialLocation;
+        initialLocation.latitude = 0;
+        initialLocation.longitude= 0;
+        popupViewController.posicion=initialLocation;
+        
+        
+       
+    }
 }
 
 

@@ -15,15 +15,15 @@
 
 @implementation PopupViewController
 
-Boolean posicionInical;
-CLLocationCoordinate2D posicion;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        posicionInical=FALSE;
+        self.posicionInical=FALSE;
     }
     return self;
 }
@@ -132,10 +132,10 @@ CLLocationCoordinate2D posicion;
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     
-        if (posicion.latitude==0 && posicion.longitude==0)
+        if (self.posicion.latitude==0 && self.posicion.longitude==0)
         {
-            posicion=[userLocation coordinate];
-            posicionInical=TRUE;
+            self.posicion=[userLocation coordinate];
+            self.posicionInical=TRUE;
            
         }
 
@@ -143,7 +143,7 @@ CLLocationCoordinate2D posicion;
     
         CLLocationCoordinate2D currentLocation=[userLocation coordinate];
         //solo  lo actualizo si hemos cambiado de la latitud
-        if  (posicion.latitude==currentLocation.latitude && posicion.longitude==currentLocation.longitude && posicionInical)
+        if  (self.posicion.latitude==currentLocation.latitude && self.posicion.longitude==currentLocation.longitude && self.posicionInical)
         {
             NSLog(@"pasa por actualizar la animacion");
             MKCoordinateRegion region=MKCoordinateRegionMakeWithDistance(currentLocation, 4000, 4000);

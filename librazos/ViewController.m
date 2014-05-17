@@ -62,6 +62,7 @@
     }
     if (celda==nil)
     {
+        //si soy null es una celda de las de busqueda
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CeldaFenomenal" owner:self options:nil];
         celda = [nib objectAtIndex:0];
     }
