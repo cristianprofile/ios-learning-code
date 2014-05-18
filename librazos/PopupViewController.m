@@ -55,44 +55,58 @@
         
         // Creamos la anotación
         CustomAnnotation *annotation = [[CustomAnnotation alloc]initWithTitle: @"Jenkins el amo"
-                                                                     subtitle: [NSString stringWithFormat:@"Has pinchado en la anotación %d",i]
+                                                                     subtitle: [NSString stringWithFormat:@" pinchado anotación %d",i]
                                                                 andCoordinate:newCoord];
         
-        MKPlacemark *mPlacemark = [[MKPlacemark alloc] initWithCoordinate:newCoord addressDictionary:nil] ;
+        
         // Y la insertamos en el mapa
         [self.map addAnnotation:annotation];
         
+        MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
+        
+        request.source = [MKMapItem mapItemForCurrentLocation];
         
         
+        MKPlacemark *toPlacemark   = [[MKPlacemark alloc] initWithCoordinate:newCoord
+                                                           addressDictionary:nil];
         
+        MKMapItem *toItem           = [[MKMapItem alloc] initWithPlacemark:toPlacemark];
+
+        request.destination = toItem;
+        request.requestsAlternateRoutes = NO;
+        MKDirections *directions =
+        [[MKDirections alloc] initWithRequest:request];
         
+        [directions calculateDirectionsWithCompletionHandler:
+         ^(MKDirectionsResponse *response, NSError *error) {
+             if (error) {
+                 // Handle Error
+             } else {
+                 
+                 for (MKRoute *route in response.routes)
+                 {
+                     float km= route.distance/1000;
+                     NSInteger minutes = floor(route.expectedTravelTime/60);
+                                                 
+                     NSString *intervalString = [NSString stringWithFormat:@"%d minutos - %.1f km", minutes,km];
+                     annotation.subtitle=intervalString;
+                     //[self.map
+                     //addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+                 }
+
+                 
+                 
+                 //[self showRoute:response];
+             }
+         }];
         
         
     }
-    
-    
-  
+
  
 
     
     // Do any additional setup after loading the view.
-}
--(void)showRoute:(MKDirectionsResponse *)response
-{
-    for (MKRoute *route in response.routes)
-    {
-        [self.map
-         addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
-    }
-}
-
-- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id < MKOverlay >)overlay
-{
-    MKPolylineRenderer *renderer =
-    [[MKPolylineRenderer alloc] initWithOverlay:overlay];
-    renderer.strokeColor = [UIColor blueColor];
-    renderer.lineWidth = 5.0;
-    return renderer;
 }
 
 - (void)didReceiveMemoryWarning
@@ -153,12 +167,43 @@
     aView.canShowCallout = YES;
     aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeInfoLight];
 
+    // Add an image to the left callout.
+    UIImageView *iconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icono_coche_gran-2.png"]];
+    aView.leftCalloutAccessoryView = iconView;
+    
+
     
     return aView;
     
     
     
 }
+
+-(void)showRoute:(MKDirectionsResponse *)response
+{
+    for (MKRoute *route in response.routes)
+    {
+        
+        NSLog(@"%f",route.distance);
+        NSLog(@"%f",route.expectedTravelTime);
+        
+        //[self.map
+         //addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+    }
+}
+
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id < MKOverlay >)overlay
+{
+    MKPolylineRenderer *renderer =
+    [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    renderer.strokeColor = [UIColor blueColor];
+    renderer.lineWidth = 5.0;
+    return renderer;
+}
+
+
+
+
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
