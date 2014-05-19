@@ -82,13 +82,13 @@
              if (error) {
                  // Handle Error
              } else {
-                 
                  for (MKRoute *route in response.routes)
                  {
+                     
                      float km= route.distance/1000;
                      NSInteger minutes = floor(route.expectedTravelTime/60);
                                                  
-                     NSString *intervalString = [NSString stringWithFormat:@"%d minutos - %.1f km", minutes,km];
+                     NSString *intervalString = [NSString stringWithFormat:@"%ld minutos - %.1f km", (long)minutes,km];
                      annotation.subtitle=intervalString;
                      //[self.map
                      //addOverlay:route.polyline level:MKOverlayLevelAboveRoads];

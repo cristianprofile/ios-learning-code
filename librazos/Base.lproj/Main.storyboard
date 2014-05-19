@@ -168,7 +168,7 @@
                     <navigationItem key="navigationItem" title="Nuevo Libro" id="W2e-TI-hxb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="K93-6b-eFa">
                             <connections>
-                                <action selector="anadirLibro:" destination="ubl-ii-HKm" id="lXy-LI-zjG"/>
+                                <segue destination="aAz-sP-IQW" kind="unwind" unwindAction="unwindToViewController:" id="lAa-k7-cer"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -182,8 +182,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fhh-kn-NYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aAz-sP-IQW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2691" y="-478"/>
+            <point key="canvasLocation" x="3367" y="-864"/>
         </scene>
         <!--Informacion View Controller - Descripcion-->
         <scene sceneID="UPk-BP-bY7">
@@ -436,6 +437,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="xlB-9a-3P2"/>
                     <navigationItem key="navigationItem" id="Q0K-C5-B4y"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="map" destination="cgb-Es-q5l" id="8Fd-FX-8AN"/>
                     </connections>
@@ -609,7 +611,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5Y6-UI-Xob"/>
         <segue reference="36p-fH-Q4S"/>
+        <segue reference="wft-1t-FuD"/>
     </inferredMetricsTieBreakers>
 </document>

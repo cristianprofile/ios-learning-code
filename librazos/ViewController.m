@@ -148,9 +148,9 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"segue"]) {
-        NuevoLibroViewController *navigationController = (NuevoLibroViewController *)segue.destinationViewController;
+        //NuevoLibroViewController *navigationController = (NuevoLibroViewController *)segue.destinationViewController;
         //navigationController.libros = self.libros;
-        navigationController.delegate = self;
+        //navigationController.delegate = self;
     }
     
     if ([segue.identifier isEqualToString:@"segueDetail"]) {
@@ -165,18 +165,40 @@
     
 }
 
--(void)nuevoLibroViewController:(NuevoLibroViewController *)controller haCreadoLibro:(LibroFenomenal *)nuevoLibro {
-    NSUInteger nuevaFila = [self.libros count];
-    [self.libros addObject:nuevoLibro];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:nuevaFila inSection:0];
-    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
-    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
-    [self dismissViewControllerAnimated:YES completion:nil];
-    //create and objetct y le digo que se init
-    UIAlertView *alertaRoja=[[UIAlertView alloc] initWithTitle:@"Liberia" message:@"Libro creado correctamente!" delegate:self cancelButtonTitle:@"Aceptar"  otherButtonTitles: nil];
-    [alertaRoja show];
 
+
+
+- (IBAction)unwindToViewController:(UIStoryboardSegue *)unwindSegue;
+{
+    UIViewController *sourceView = unwindSegue.sourceViewController;
+    NSLog(@"pasaaaa");
+    
+    if ([sourceView isKindOfClass:[ NuevoLibroViewController class]]) {
+        NuevoLibroViewController  *nuevoLibroViewController = (NuevoLibroViewController  *)sourceView;
+        NSUInteger nuevaFila = [self.libros count];
+        LibroFenomenal *nuevoLibro = [[LibroFenomenal alloc] init];
+        nuevoLibro.nombre = nuevoLibroViewController.titulo.text;
+        nuevoLibro.autor = nuevoLibroViewController.autor.text;
+        nuevoLibro.publicado = nuevoLibroViewController.fecha.text;
+        nuevoLibro.genero = nuevoLibroViewController.genero.text;
+        nuevoLibro.argumento = nuevoLibroViewController.argumento.text;
+        nuevoLibro.portada = nuevoLibroViewController.foto.image;   
+        [self.libros addObject:nuevoLibro];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:nuevaFila inSection:0];
+        NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+        [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self dismissViewControllerAnimated:YES completion:nil];
+        //create and objetct y le digo que se init
+        UIAlertView *alertaRoja=[[UIAlertView alloc] initWithTitle:@"Liberia" message:@"Libro creado correctamente!" delegate:self cancelButtonTitle:@"Aceptar"  otherButtonTitles: nil];
+        [alertaRoja show];
+        
+        
+        
+    }
+   
+    
 }
+
 
 
 

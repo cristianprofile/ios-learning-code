@@ -12,7 +12,7 @@
 #import "NuevoLibroViewController.h"
 
 
-@interface ViewController : UITableViewController<NuevoLibroViewControllerDelegate>
+@interface ViewController : UITableViewController
 @property NSMutableArray *libros;
 @property NSArray *searchResults;
 @property LibroFenomenal *libroSeleccionado;

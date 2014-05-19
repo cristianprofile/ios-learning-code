@@ -10,20 +10,10 @@
 #import "LibroFenomenal.h"
 
 
-//delegate method to add new book
-@class NuevoLibroViewController;
-
-//estos son mis metodos delegados
-@protocol NuevoLibroViewControllerDelegate <NSObject>
-
--(void)nuevoLibroViewController:(NuevoLibroViewController *)controller haCreadoLibro:(LibroFenomenal *)nuevoLibro;
-
-@end
 
 //*******************************************************************************
 
-@interface NuevoLibroViewController :UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
-
+@interface NuevoLibroViewController :UIViewController <UIImagePickerControllerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextField *titulo;
@@ -37,13 +27,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *foto;
 
 //delegate method
-@property (weak, nonatomic) id <NuevoLibroViewControllerDelegate> delegate;
+
 @property NSMutableArray *libros;
 
 
 - (IBAction)anadirImagen:(id)sender;
-- (IBAction)anadirLibro:(id)sender;
-
 -(IBAction)textFieldReturn:(id)sender;
 
 @end

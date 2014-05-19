@@ -52,19 +52,7 @@
 
 
 
-- (IBAction)anadirLibro:(id)sender {
-    
-    LibroFenomenal *nuevoLibro = [[LibroFenomenal alloc] init];
-    nuevoLibro.nombre = self.titulo.text;
-    nuevoLibro.autor = self.autor.text;
-    nuevoLibro.publicado = self.fecha.text;
-    nuevoLibro.genero = self.genero.text;
-    nuevoLibro.argumento = self.argumento.text;
-    nuevoLibro.portada = self.foto.image;
-    [self.delegate nuevoLibroViewController:self haCreadoLibro:nuevoLibro];
-   
-    NSLog(@"holaaaaa");
-}
+
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
