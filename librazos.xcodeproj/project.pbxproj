@@ -28,12 +28,10 @@
 		D5AF5B47191F077B0035EB45 /* LibroFenomenal.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B45191F077B0035EB45 /* LibroFenomenal.m */; };
 		D5AF5B4A191F0FD80035EB45 /* InformacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B49191F0FD80035EB45 /* InformacionViewController.m */; };
 		D5AF5B4B191F0FD80035EB45 /* InformacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B49191F0FD80035EB45 /* InformacionViewController.m */; };
-		D5AF5B4E191F80F40035EB45 /* jenkins.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */; };
-		D5AF5B4F191F80F40035EB45 /* jenkins.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */; };
-		D5AF5B50191F80F40035EB45 /* spring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4D191F80F40035EB45 /* spring.jpeg */; };
-		D5AF5B51191F80F40035EB45 /* spring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5AF5B4D191F80F40035EB45 /* spring.jpeg */; };
 		D5AF5B58191FB76A0035EB45 /* NuevoLibroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B57191FB76A0035EB45 /* NuevoLibroViewController.m */; };
 		D5AF5B59191FB76A0035EB45 /* NuevoLibroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF5B57191FB76A0035EB45 /* NuevoLibroViewController.m */; };
+		D5B1F694192BAFD400B84675 /* jenkins.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5B1F692192BAFD400B84675 /* jenkins.jpeg */; };
+		D5B1F695192BAFD400B84675 /* spring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D5B1F693192BAFD400B84675 /* spring.jpeg */; };
 		D5D3602F1921FF260023DE8A /* CeldaFenomenal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */; };
 		D5D360301921FF260023DE8A /* CeldaFenomenal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */; };
 		D5D5C1211922E6CB009710A3 /* mapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D5C1201922E6CB009710A3 /* mapTabViewController.m */; };
@@ -84,10 +82,10 @@
 		D5AF5B45191F077B0035EB45 /* LibroFenomenal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibroFenomenal.m; sourceTree = "<group>"; };
 		D5AF5B48191F0FD80035EB45 /* InformacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformacionViewController.h; sourceTree = "<group>"; };
 		D5AF5B49191F0FD80035EB45 /* InformacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformacionViewController.m; sourceTree = "<group>"; };
-		D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jenkins.jpeg; path = ../../jenkins.jpeg; sourceTree = "<group>"; };
-		D5AF5B4D191F80F40035EB45 /* spring.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = spring.jpeg; path = ../../spring.jpeg; sourceTree = "<group>"; };
 		D5AF5B56191FB76A0035EB45 /* NuevoLibroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevoLibroViewController.h; sourceTree = "<group>"; };
 		D5AF5B57191FB76A0035EB45 /* NuevoLibroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoLibroViewController.m; sourceTree = "<group>"; };
+		D5B1F692192BAFD400B84675 /* jenkins.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jenkins.jpeg; sourceTree = "<group>"; };
+		D5B1F693192BAFD400B84675 /* spring.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spring.jpeg; sourceTree = "<group>"; };
 		D5D3602E1921FF260023DE8A /* CeldaFenomenal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CeldaFenomenal.xib; sourceTree = "<group>"; };
 		D5D5C11F1922E6CB009710A3 /* mapTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapTabViewController.h; sourceTree = "<group>"; };
 		D5D5C1201922E6CB009710A3 /* mapTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapTabViewController.m; sourceTree = "<group>"; };
@@ -159,12 +157,12 @@
 		D5AF5B15191F04F20035EB45 /* librazos */ = {
 			isa = PBXGroup;
 			children = (
-				D5AF5B4C191F80F40035EB45 /* jenkins.jpeg */,
-				D5AF5B4D191F80F40035EB45 /* spring.jpeg */,
 				D5D5C11F1922E6CB009710A3 /* mapTabViewController.h */,
 				D5D5C12F1922F119009710A3 /* TelefViewController.h */,
 				D5D5C1301922F119009710A3 /* TelefViewController.m */,
 				D5D5C1201922E6CB009710A3 /* mapTabViewController.m */,
+				D5B1F692192BAFD400B84675 /* jenkins.jpeg */,
+				D5B1F693192BAFD400B84675 /* spring.jpeg */,
 				D5AF5B56191FB76A0035EB45 /* NuevoLibroViewController.h */,
 				D5AC9D2319209F90001E820A /* CeldaFenomenal.h */,
 				D5AC9D2419209F90001E820A /* CeldaFenomenal.m */,
@@ -277,6 +275,7 @@
 				ORGANIZATIONNAME = cristianTestin;
 				TargetAttributes = {
 					D5AF5B0B191F04F20035EB45 = {
+						DevelopmentTeam = 6P8L7BSCEQ;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -314,10 +313,10 @@
 			files = (
 				D5AF5B28191F04F20035EB45 /* Images.xcassets in Resources */,
 				D5D3602F1921FF260023DE8A /* CeldaFenomenal.xib in Resources */,
+				D5B1F695192BAFD400B84675 /* spring.jpeg in Resources */,
 				D5AF5B1A191F04F20035EB45 /* InfoPlist.strings in Resources */,
-				D5AF5B4E191F80F40035EB45 /* jenkins.jpeg in Resources */,
-				D5AF5B50191F80F40035EB45 /* spring.jpeg in Resources */,
 				D57418E919296724009B4EF9 /* icono_coche_gran-2.png in Resources */,
+				D5B1F694192BAFD400B84675 /* jenkins.jpeg in Resources */,
 				D5AF5B23191F04F20035EB45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,9 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5AF5B4F191F80F40035EB45 /* jenkins.jpeg in Resources */,
 				D5D360301921FF260023DE8A /* CeldaFenomenal.xib in Resources */,
-				D5AF5B51191F80F40035EB45 /* spring.jpeg in Resources */,
 				D5AF5B39191F04F20035EB45 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "librazos/librazos-Prefix.pch";
 				INFOPLIST_FILE = "librazos/librazos-Info.plist";
@@ -494,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "librazos/librazos-Prefix.pch";
 				INFOPLIST_FILE = "librazos/librazos-Info.plist";
