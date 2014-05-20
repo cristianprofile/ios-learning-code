@@ -126,42 +126,25 @@ CLLocationManager *locationManager;
            fromLocation:(CLLocation *)oldLocation{
     
     //hago actualizar el zoom del mapa y paro la localización
-    [self zoomToFitMapAnnotations:self.map];
+    [self zoomToFitMapAnnotationsIosSeven:self.map];
     [locationManager stopUpdatingLocation];
     
    
 }
 
+
+
+
 //method to zoom map  with annotation in my map. It fits correct
-- (void)zoomToFitMapAnnotations:(MKMapView *)mapView {
+- (void)zoomToFitMapAnnotationsIosSeven:(MKMapView *)mapView {
     if ([mapView.annotations count] == 0) return;
     
-    CLLocationCoordinate2D topLeftCoord;
-    topLeftCoord.latitude = -90;
-    topLeftCoord.longitude = 180;
-    
-    CLLocationCoordinate2D bottomRightCoord;
-    bottomRightCoord.latitude = 90;
-    bottomRightCoord.longitude = -180;
-    
-    for(id<MKAnnotation> annotation in mapView.annotations) {
-        topLeftCoord.longitude = fmin(topLeftCoord.longitude, annotation.coordinate.longitude);
-        topLeftCoord.latitude = fmax(topLeftCoord.latitude, annotation.coordinate.latitude);
-        bottomRightCoord.longitude = fmax(bottomRightCoord.longitude, annotation.coordinate.longitude);
-        bottomRightCoord.latitude = fmin(bottomRightCoord.latitude, annotation.coordinate.latitude);
-    }
-    
-    MKCoordinateRegion region;
-    region.center.latitude = topLeftCoord.latitude - (topLeftCoord.latitude - bottomRightCoord.latitude) * 0.5;
-    region.center.longitude = topLeftCoord.longitude + (bottomRightCoord.longitude - topLeftCoord.longitude) * 0.5;
-    region.span.latitudeDelta = fabs(topLeftCoord.latitude - bottomRightCoord.latitude) * 1.1;
-    
-    // Add a little extra space on the sides
-    region.span.longitudeDelta = fabs(bottomRightCoord.longitude - topLeftCoord.longitude) * 1.1;
-    
-    region = [mapView regionThatFits:region];
-    [mapView setRegion:region animated:YES];
+    [mapView showAnnotations:mapView.annotations animated:YES];
 }
+
+
+
+
 
 
 //Sobreescribimos el método para poder modificar elementos de la anotación como la imagen.
