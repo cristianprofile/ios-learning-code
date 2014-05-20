@@ -15,15 +15,14 @@
 
 @implementation PopupViewController
 
-
+CLLocationManager *locationManager;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        self.posicionInical=FALSE;
+   
     }
     return self;
 }
@@ -66,6 +65,7 @@
         
         request.source = [MKMapItem mapItemForCurrentLocation];
         
+       
         
         MKPlacemark *toPlacemark   = [[MKPlacemark alloc] initWithCoordinate:newCoord
                                                            addressDictionary:nil];
@@ -102,12 +102,21 @@
         
         
     }
+    
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    [locationManager startUpdatingLocation];
 
+    
+  
  
 
     
     // Do any additional setup after loading the view.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -115,6 +124,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation{
+    CLLocationCoordinate2D currentLocation=[newLocation coordinate];
+    //solo  lo actualizo si hemos cambiado de la latitud
+    
+    NSLog(@"pasa por actualizar la animacion");
+    [locationManager stopUpdatingLocation];
+    MKCoordinateRegion region=MKCoordinateRegionMakeWithDistance(currentLocation, 4000, 4000);
+    [self.map setRegion:region animated:YES];
+   
+}
 
 
 //Sobreescribimos el método para poder modificar elementos de la anotación como la imagen.
@@ -238,33 +261,6 @@
     
 
 }
-
-
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    
-        if (self.posicion.latitude==0 && self.posicion.longitude==0)
-        {
-            self.posicion=[userLocation coordinate];
-            self.posicionInical=TRUE;
-           
-        }
-
-
-    
-        CLLocationCoordinate2D currentLocation=[userLocation coordinate];
-        //solo  lo actualizo si hemos cambiado de la latitud
-        if  (self.posicion.latitude==currentLocation.latitude && self.posicion.longitude==currentLocation.longitude && self.posicionInical)
-        {
-            NSLog(@"pasa por actualizar la animacion");
-            MKCoordinateRegion region=MKCoordinateRegionMakeWithDistance(currentLocation, 4000, 4000);
-            [self.map setRegion:region animated:YES];
-            
-    }
-    
-}
-
-
 
 
 

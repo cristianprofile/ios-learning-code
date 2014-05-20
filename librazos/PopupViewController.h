@@ -11,13 +11,12 @@
 #import <AddressBook/AddressBook.h>
 
 
-@interface PopupViewController : UIViewController<MKMapViewDelegate>
+@interface PopupViewController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>
 
 
 
 @property (weak, nonatomic) IBOutlet MKMapView *map;
-@property Boolean posicionInical;
-@property CLLocationCoordinate2D posicion;
+
 
 
 @end
