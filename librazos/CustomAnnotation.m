@@ -11,7 +11,7 @@
 @implementation CustomAnnotation
 
 
-@synthesize title, subtitle, coordinate;
+@synthesize title, subtitle, coordinate,route;
 
 // Implementamos el método de inicialización del objeto.
 - (id)initWithTitle:(NSString *)aTitle subtitle:(NSString*)aSubtitle andCoordinate:(CLLocationCoordinate2D)coord
