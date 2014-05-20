@@ -124,10 +124,8 @@ CLLocationManager *locationManager;
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation{
-    CLLocationCoordinate2D currentLocation=[newLocation coordinate];
-    //solo  lo actualizo si hemos cambiado de la latitud
     
-    NSLog(@"pasa por actualizar la animacion");    
+    //hago actualizar el zoom del mapa y paro la localización
     [self zoomToFitMapAnnotations:self.map];
     [locationManager stopUpdatingLocation];
     
@@ -219,8 +217,6 @@ CLLocationManager *locationManager;
     // Add an image to the left callout.
     UIImageView *iconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icono_coche_gran-2.png"]];
     aView.leftCalloutAccessoryView = iconView;
-    
-
     
     return aView;
     
