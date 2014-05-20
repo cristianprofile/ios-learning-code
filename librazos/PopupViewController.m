@@ -109,12 +109,7 @@ CLLocationManager *locationManager;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     [locationManager startUpdatingLocation];
 
-    
-  
- 
 
-    
-    // Do any additional setup after loading the view.
 }
 
 
@@ -258,7 +253,6 @@ CLLocationManager *locationManager;
     NSArray *mapItems = @[mapItemOrigen, mapItemDestino];
     
    [MKMapItem openMapsWithItems:mapItems launchOptions:@{MKLaunchOptionsDirectionsModeKey  : MKLaunchOptionsDirectionsModeDriving}];
-    
 
 }
 
