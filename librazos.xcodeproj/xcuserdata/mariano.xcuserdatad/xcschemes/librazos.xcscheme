@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5AF5B0B191F04F20035EB45"
                BuildableName = "librazos.app"
-               BlueprintName = "librazos"
+               BlueprintName = "iupay"
                ReferencedContainer = "container:librazos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5AF5B0B191F04F20035EB45"
             BuildableName = "librazos.app"
-            BlueprintName = "librazos"
+            BlueprintName = "iupay"
             ReferencedContainer = "container:librazos.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5AF5B0B191F04F20035EB45"
             BuildableName = "librazos.app"
-            BlueprintName = "librazos"
+            BlueprintName = "iupay"
             ReferencedContainer = "container:librazos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5AF5B0B191F04F20035EB45"
             BuildableName = "librazos.app"
-            BlueprintName = "librazos"
+            BlueprintName = "iupay"
             ReferencedContainer = "container:librazos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
