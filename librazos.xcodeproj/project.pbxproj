@@ -484,7 +484,7 @@
 				GCC_PREFIX_HEADER = "librazos/librazos-Prefix.pch";
 				INFOPLIST_FILE = "librazos/librazos-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "22DE3272-4028-46AB-AB33-BF325E3D952B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -500,7 +500,7 @@
 				GCC_PREFIX_HEADER = "librazos/librazos-Prefix.pch";
 				INFOPLIST_FILE = "librazos/librazos-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "22DE3272-4028-46AB-AB33-BF325E3D952B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
