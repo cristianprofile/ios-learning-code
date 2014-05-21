@@ -61,7 +61,6 @@
         initialLocation.longitude= 0;
        
         
-        
        
     }
 }
