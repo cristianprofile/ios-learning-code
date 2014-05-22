@@ -59,7 +59,7 @@
 		D57418E819296724009B4EF9 /* icono_coche_gran-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_coche_gran-2.png"; sourceTree = "<group>"; };
 		D5AC9D2319209F90001E820A /* CeldaFenomenal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldaFenomenal.h; sourceTree = "<group>"; };
 		D5AC9D2419209F90001E820A /* CeldaFenomenal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldaFenomenal.m; sourceTree = "<group>"; };
-		D5AF5B0C191F04F20035EB45 /* librazos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = librazos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5AF5B0C191F04F20035EB45 /* iupay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iupay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5AF5B0F191F04F20035EB45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5AF5B11191F04F20035EB45 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D5AF5B13191F04F20035EB45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -136,7 +136,7 @@
 		D5AF5B0D191F04F20035EB45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5AF5B0C191F04F20035EB45 /* librazos.app */,
+				D5AF5B0C191F04F20035EB45 /* iupay.app */,
 				D5AF5B2D191F04F20035EB45 /* librazosTests.xctest */,
 			);
 			name = Products;
@@ -244,7 +244,7 @@
 			);
 			name = iupay;
 			productName = librazos;
-			productReference = D5AF5B0C191F04F20035EB45 /* librazos.app */;
+			productReference = D5AF5B0C191F04F20035EB45 /* iupay.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D5AF5B2C191F04F20035EB45 /* librazosTests */ = {
@@ -484,7 +484,7 @@
 				GCC_PREFIX_HEADER = "librazos/librazos-Prefix.pch";
 				INFOPLIST_FILE = "librazos/librazos-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F77B7A66-A478-4FCB-9A59-F276A0E509DA";
+				PROVISIONING_PROFILE = "C0DD92FD-21F6-45FE-8579-BE96DFE49901";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -500,7 +500,7 @@
 				GCC_PREFIX_HEADER = "librazos/librazos-Prefix.pch";
 				INFOPLIST_FILE = "librazos/librazos-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F77B7A66-A478-4FCB-9A59-F276A0E509DA";
+				PROVISIONING_PROFILE = "C0DD92FD-21F6-45FE-8579-BE96DFE49901";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
