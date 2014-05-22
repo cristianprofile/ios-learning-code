@@ -14,7 +14,7 @@
 //*******************************************************************************
 
 @interface NuevoLibroViewController :UIViewController <UIImagePickerControllerDelegate>
-
+  
 
 @property (weak, nonatomic) IBOutlet UITextField *titulo;
 @property (weak, nonatomic) IBOutlet UITextField *autor;
