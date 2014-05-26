@@ -83,7 +83,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="4752" y="520"/>
+            <point key="canvasLocation" x="4699" y="548"/>
         </scene>
         <!--Nuevo Libro View Controller - Nuevo Libro-->
         <scene sceneID="JRI-Fx-owg">
@@ -335,6 +335,7 @@
                         <segue destination="4gW-vR-hPZ" kind="relationship" relationship="viewControllers" id="cvQ-K1-ZUJ"/>
                         <segue destination="eBF-Pt-vCA" kind="relationship" relationship="viewControllers" id="JW3-H9-jTN"/>
                         <segue destination="K8v-VY-pP3" kind="relationship" relationship="viewControllers" id="MJF-gU-0eb"/>
+                        <segue destination="hky-7l-8hQ" kind="relationship" relationship="viewControllers" id="vLt-LP-Nft"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqW-Un-XNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -541,7 +542,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="san-p1-P1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4017" y="2126"/>
+            <point key="canvasLocation" x="4105" y="2116"/>
+        </scene>
+        <!--Your View Controller - googlemaps-->
+        <scene sceneID="ICP-4G-Pbx">
+            <objects>
+                <viewController id="hky-7l-8hQ" customClass="YourViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bkd-u7-2zl"/>
+                        <viewControllerLayoutGuide type="bottom" id="VDQ-QW-1hT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cC4-fB-9cc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="googlemaps" id="qbq-Ak-5fy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbY-8g-boz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3585" y="2435"/>
         </scene>
         <!--Rutilla View Controller - buscar calle-->
         <scene sceneID="dek-gX-p6q">
@@ -602,7 +622,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okV-at-81F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4017" y="2807"/>
+            <point key="canvasLocation" x="4105" y="2811"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -612,6 +632,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="36p-fH-Q4S"/>
-        <segue reference="wft-1t-FuD"/>
+        <segue reference="5Y6-UI-Xob"/>
     </inferredMetricsTieBreakers>
 </document>
