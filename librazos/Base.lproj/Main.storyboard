@@ -385,6 +385,16 @@
                                     <segue destination="Yh6-IQ-j31" kind="modal" identifier="segueModal" modalTransitionStyle="crossDissolve" id="mVx-7C-fGK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqV-UA-qUN">
+                                <rect key="frame" x="107" y="261" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="llamar a mapas google">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hky-7l-8hQ" kind="push" id="9Bq-7c-E1u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -561,7 +571,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbY-8g-boz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3585" y="2435"/>
+            <point key="canvasLocation" x="4949" y="2171"/>
         </scene>
         <!--Rutilla View Controller - buscar calle-->
         <scene sceneID="dek-gX-p6q">
@@ -631,6 +641,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="9Bq-7c-E1u"/>
         <segue reference="36p-fH-Q4S"/>
         <segue reference="5Y6-UI-Xob"/>
     </inferredMetricsTieBreakers>
