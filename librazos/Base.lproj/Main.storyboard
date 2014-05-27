@@ -335,7 +335,6 @@
                         <segue destination="4gW-vR-hPZ" kind="relationship" relationship="viewControllers" id="cvQ-K1-ZUJ"/>
                         <segue destination="eBF-Pt-vCA" kind="relationship" relationship="viewControllers" id="JW3-H9-jTN"/>
                         <segue destination="K8v-VY-pP3" kind="relationship" relationship="viewControllers" id="MJF-gU-0eb"/>
-                        <segue destination="hky-7l-8hQ" kind="relationship" relationship="viewControllers" id="vLt-LP-Nft"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqW-Un-XNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -571,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbY-8g-boz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4949" y="2171"/>
+            <point key="canvasLocation" x="5877" y="2155"/>
         </scene>
         <!--Rutilla View Controller - buscar calle-->
         <scene sceneID="dek-gX-p6q">
@@ -641,7 +640,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="9Bq-7c-E1u"/>
         <segue reference="36p-fH-Q4S"/>
         <segue reference="5Y6-UI-Xob"/>
     </inferredMetricsTieBreakers>
