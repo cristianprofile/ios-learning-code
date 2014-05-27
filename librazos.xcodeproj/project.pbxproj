@@ -22,6 +22,7 @@
 		D5A040231933F4F30056CD45 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A040221933F4F30056CD45 /* QuartzCore.framework */; };
 		D5A040251933F5040056CD45 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A040241933F5030056CD45 /* SystemConfiguration.framework */; };
 		D5A040281933F7C40056CD45 /* YourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A040271933F7C40056CD45 /* YourViewController.m */; };
+		D5A0402C19346EB70056CD45 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5A0402B19346EB70056CD45 /* GoogleMaps.bundle */; };
 		D5AC9D2519209F90001E820A /* CeldaFenomenal.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AC9D2419209F90001E820A /* CeldaFenomenal.m */; };
 		D5AF5B10191F04F20035EB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B0F191F04F20035EB45 /* Foundation.framework */; };
 		D5AF5B12191F04F20035EB45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5B11191F04F20035EB45 /* CoreGraphics.framework */; };
@@ -84,6 +85,7 @@
 		D5A040241933F5030056CD45 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5A040261933F7C40056CD45 /* YourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourViewController.h; sourceTree = "<group>"; };
 		D5A040271933F7C40056CD45 /* YourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourViewController.m; sourceTree = "<group>"; };
+		D5A0402B19346EB70056CD45 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		D5AC9D2319209F90001E820A /* CeldaFenomenal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldaFenomenal.h; sourceTree = "<group>"; };
 		D5AC9D2419209F90001E820A /* CeldaFenomenal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldaFenomenal.m; sourceTree = "<group>"; };
 		D5AF5B0C191F04F20035EB45 /* iupay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iupay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 		D5AF5B0E191F04F20035EB45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5A0402B19346EB70056CD45 /* GoogleMaps.bundle */,
 				D5A040241933F5030056CD45 /* SystemConfiguration.framework */,
 				D5A040221933F4F30056CD45 /* QuartzCore.framework */,
 				D5A040201933F4E60056CD45 /* OpenGLES.framework */,
@@ -371,6 +374,7 @@
 				D57418E919296724009B4EF9 /* icono_coche_gran-2.png in Resources */,
 				D5B1F694192BAFD400B84675 /* jenkins.jpeg in Resources */,
 				D5AF5B23191F04F20035EB45 /* Main.storyboard in Resources */,
+				D5A0402C19346EB70056CD45 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
