@@ -21,6 +21,9 @@
     subtitle = aSubtitle;
 	coordinate = coord;
 	return self;
+    
+    
+    
 }
 
 @end
