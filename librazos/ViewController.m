@@ -76,9 +76,7 @@
     celda.imagen.layer.borderColor = [UIColor lightGrayColor].CGColor;
     celda.imagen.layer.borderWidth = 1.0;
     
-    
-   
-    
+
     
     return celda;
 }
@@ -93,10 +91,10 @@
     self.searchResults = [self.libros filteredArrayUsingPredicate:resultPredicate];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 71;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+  //  return 71;
+//}
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
