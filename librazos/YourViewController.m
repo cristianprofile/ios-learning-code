@@ -36,6 +36,8 @@ static NSString const * kTerrainType = @"Terrain";
     // Listen to touch events on the UISegmentedControl.
     [switcher_ addTarget:self action:@selector(didChangeSwitcher)
         forControlEvents:UIControlEventValueChanged];
+    
+    
 }
 
 - (void)didChangeSwitcher {
