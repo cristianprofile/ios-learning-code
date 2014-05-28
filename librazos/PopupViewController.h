@@ -16,7 +16,9 @@
 
 
 @property (weak, nonatomic) IBOutlet MKMapView *map;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControle;
 
+- (IBAction)segmentValueChage:(id)sender;
 
 
 @end

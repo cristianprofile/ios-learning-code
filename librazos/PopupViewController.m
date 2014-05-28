@@ -268,4 +268,20 @@ CLLocationManager *locationManager;
 
 
 
+- (IBAction)segmentValueChage:(id)sender {
+    
+    switch (self.segmentedControle.selectedSegmentIndex) {
+        case 0:
+            self.map.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            self.map.mapType = MKMapTypeHybrid;
+            break;
+        case 2:
+            self.map.mapType = MKMapTypeSatellite;
+            break;
+        default:
+            break;
+    }
+}
 @end

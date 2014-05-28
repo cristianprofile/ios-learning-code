@@ -381,7 +381,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yh6-IQ-j31" kind="modal" identifier="segueModal" modalTransitionStyle="crossDissolve" id="mVx-7C-fGK"/>
+                                    <segue destination="Yh6-IQ-j31" kind="push" identifier="segueModal" id="mVx-7C-fGK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqV-UA-qUN">
@@ -418,13 +418,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mapa total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-cT-nyC">
-                                <rect key="frame" x="89" y="-42" width="199" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3C-Ha-59n">
                                 <rect key="frame" x="-59" y="1" width="169" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -446,10 +439,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="xlB-9a-3P2"/>
-                    <navigationItem key="navigationItem" id="Q0K-C5-B4y"/>
+                    <navigationItem key="navigationItem" id="Q0K-C5-B4y">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="Oo1-48-K12">
+                            <rect key="frame" x="65" y="7" width="191" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Map"/>
+                                <segment title="Hibrid"/>
+                                <segment title="Satellite"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentValueChage:" destination="Yh6-IQ-j31" eventType="valueChanged" id="6ve-wf-Epk"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="map" destination="cgb-Es-q5l" id="8Fd-FX-8AN"/>
+                        <outlet property="segmentedControle" destination="Oo1-48-K12" id="7fj-aw-zEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9v-UW-S2P" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,7 +18,7 @@ static NSString const * kTerrainType = @"Terrain";
     // coordinate -33.86,151.20 at zoom level 6.
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:40.33468913769062
                                                             longitude:-3.7497285227539123
-                                                                 zoom:16];
+                                                                 zoom:10];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     self.view = mapView_;
     
@@ -32,6 +32,26 @@ static NSString const * kTerrainType = @"Terrain";
     UIViewAutoresizingFlexibleBottomMargin;
     switcher_.selectedSegmentIndex = 0;
     self.navigationItem.titleView = switcher_;
+    
+    mapView_.myLocationEnabled = YES;
+    self.view = mapView_;
+    
+    // Creates a marker in the center of the map.
+    
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(40.33468913769062, -3.7497285227539123);
+    marker.title = @"leganes";
+    marker.snippet = @"madrid";
+    marker.map = mapView_;
+    
+    GMSMarker *marker2 = [[GMSMarker alloc] init];
+    marker2.position = CLLocationCoordinate2DMake(40.43468913769062, -3.7497285227539123);
+    marker2.title = @"madrid";
+    marker2.snippet = @"panolaco";
+    marker2.map = mapView_;
+    
+    
+    
     
     // Listen to touch events on the UISegmentedControl.
     [switcher_ addTarget:self action:@selector(didChangeSwitcher)
