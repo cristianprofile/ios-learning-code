@@ -103,6 +103,7 @@ CLLocationManager *locationManager;
         
     }
     
+    self.map.showsUserLocation=TRUE;
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -125,12 +126,21 @@ CLLocationManager *locationManager;
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation{
     
-    //hago actualizar el zoom del mapa y paro la localización
-    [self zoomToFitMapAnnotationsIosSeven:self.map];
+    //Paro la monitorización de la localización
     [locationManager stopUpdatingLocation];
     
    
 }
+
+
+
+- (void)mapView:(MKMapView *)aMapView didUpdateUserLocation:(MKUserLocation *)aUserLocation {
+    //cuando me cambia la situación del usuario, es decir me posiciona el movil entonces le hago el zoom
+    [self zoomToFitMapAnnotationsIosSeven:self.map];
+    
+
+}
+
 
 
 
