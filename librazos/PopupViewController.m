@@ -110,7 +110,7 @@ CLLocationManager *locationManager;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     [locationManager startUpdatingLocation];
 
-
+     
 }
 
 
@@ -126,6 +126,8 @@ CLLocationManager *locationManager;
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation{
     
+    NSLog(@"pasa por parar localizacion");
+   
     //Paro la monitorización de la localización
     [locationManager stopUpdatingLocation];
     
@@ -136,8 +138,19 @@ CLLocationManager *locationManager;
 
 - (void)mapView:(MKMapView *)aMapView didUpdateUserLocation:(MKUserLocation *)aUserLocation {
     //cuando me cambia la situación del usuario, es decir me posiciona el movil entonces le hago el zoom
-    [self zoomToFitMapAnnotationsIosSeven:self.map];
+     NSLog(@"pasa por hacer zoom");
     
+    [locationManager stopUpdatingLocation];
+    
+
+}
+
+
+-(void)mapViewDidFinishRenderingMap:(MKMapView *)mapView fullyRendered:(BOOL)fullyRendered
+{
+    if (fullyRendered)
+     [self zoomToFitMapAnnotationsIosSeven:self.map];
+
 
 }
 
