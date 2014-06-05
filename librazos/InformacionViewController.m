@@ -19,6 +19,7 @@
     self.fechaPub.text = self.libroSeleccionado.publicado;
     self.genero.text = self.libroSeleccionado.genero;
     self.argumento.text= self.libroSeleccionado.argumento;
+    
     self.portada.image = self.libroSeleccionado.portada;
     
     

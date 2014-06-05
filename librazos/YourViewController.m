@@ -33,6 +33,9 @@ static NSString const * kTerrainType = @"Terrain";
     switcher_.selectedSegmentIndex = 0;
     self.navigationItem.titleView = switcher_;
     
+    
+    
+    
     mapView_.myLocationEnabled = YES;
     self.view = mapView_;
     
