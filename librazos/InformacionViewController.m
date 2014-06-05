@@ -31,6 +31,8 @@
     self.portada.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.portada.layer.borderWidth = 1.0;
     
+    
+    
 }
 
 
