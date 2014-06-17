@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>974BEE75-ED9F-4D94-82D6-4E8DB5B8FF1F</string>
+	<string>200B2835-CBAC-482A-9C37-1CA9A76559F5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>librazos</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3103C76D-CE5F-4904-A0BA-F969C8489A88</key>
-		<string>https://github.com/cristianprofile/ios7-test-concept.git</string>
+		<key>5C89E6B8-78FE-4481-8C08-E31A1595AD8E</key>
+		<string>https://github.com/cristianprofile/ios-learning-code.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>librazos.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3103C76D-CE5F-4904-A0BA-F969C8489A88</key>
+		<key>5C89E6B8-78FE-4481-8C08-E31A1595AD8E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/cristianprofile/ios7-test-concept.git</string>
+	<string>https://github.com/cristianprofile/ios-learning-code.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3103C76D-CE5F-4904-A0BA-F969C8489A88</string>
+	<string>5C89E6B8-78FE-4481-8C08-E31A1595AD8E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3103C76D-CE5F-4904-A0BA-F969C8489A88</string>
+			<string>5C89E6B8-78FE-4481-8C08-E31A1595AD8E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>librazos</string>
 		</dict>

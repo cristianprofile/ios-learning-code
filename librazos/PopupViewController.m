@@ -128,31 +128,19 @@ CLLocationManager *locationManager;
     
     NSLog(@"pasa por parar localizacion");
    
-    //Paro la monitorización de la localización
+    [self zoomToFitMapAnnotationsIosSeven:self.map];
     [locationManager stopUpdatingLocation];
+ 
     
    
 }
 
 
 
-- (void)mapView:(MKMapView *)aMapView didUpdateUserLocation:(MKUserLocation *)aUserLocation {
-    //cuando me cambia la situación del usuario, es decir me posiciona el movil entonces le hago el zoom
-     NSLog(@"pasa por hacer zoom");
-    
-    [locationManager stopUpdatingLocation];
-    
-
-}
 
 
--(void)mapViewDidFinishRenderingMap:(MKMapView *)mapView fullyRendered:(BOOL)fullyRendered
-{
-    if (fullyRendered)
-     [self zoomToFitMapAnnotationsIosSeven:self.map];
 
 
-}
 
 
 
